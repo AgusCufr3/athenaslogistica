@@ -1,0 +1,55 @@
+/* reset*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+/* reset*/
+/* Barra navegacion*/
+.barra_nav {
+	background: rgb(142, 98, 230);
+	background: linear-gradient(
+		24deg,
+		#8d60e6fb 20%,
+		rgba(0, 212, 255, 0.9444152661064426) 97%
+	);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 65px;
+	padding: 5px 5%;
+}
+.botones_nav {
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 15px;
+}
+a {
+	font-size: 20px;
+	padding: 0 10px;
+	text-decoration: none;
+	color: aliceblue;
+	transition: all 0.5s ease-in-out;
+}
+ul :hover {
+	color: #2a2b2e;
+	transform: scale(1.1);
+}
+.barra_nav .boton button {
+	font-weight: 700;
+	color: black;
+	padding: 9px 25px;
+	background: #ffffff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3;
+}
+.barra_nav .boton button:hover {
+	background-color: black;
+	color: #ebf5ee;
+	transition: scale(1.1);
+}
+/* Barra navegacion*/
