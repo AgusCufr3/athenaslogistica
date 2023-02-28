@@ -1,4 +1,5 @@
 /* reset*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,9 @@
 	font-size: 20px;
 }
 /* reset*/
+body {
+	background-color: #032024;
+}
 /* Barra navegacion*/
 .barra_nav {
 	background: rgb(142, 98, 230);
@@ -14,37 +18,26 @@
 		24deg,
 		#8d60e6fb 20%,
 		rgba(0, 212, 255, 0.9444152661064426) 97%
-	);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 65px;
-	padding: 5px 5%;
-}
-.botones_nav {
-	display: inline-block;
-	padding-top: 15px;
-	font-size: 15px;
-}
-a {
-	font-size: 20px;
-	padding: 0 10px;
-	text-decoration: none;
-	color: aliceblue;
-	transition: all 0.5s ease-in-out;
-}
-ul :hover {
-	color: #2a2b2e;
-	transform: scale(1.1);
+    );
+    padding-left: 15px;
 }
 
-h1 {
-	font-family: "Poppins", sans-serif;
-	font-size: 20px;
-	padding: 0 10px;
+.nav-item a {
 	text-decoration: none;
 	color: aliceblue;
 	transition: all 0.5s ease-in-out;
+
+}
+
+.nav-item {
+    font-size: 17px;
+	padding: 0 5px
+}
+
+.nombre_empresa {
+	font-family: "Dancing Script", cursive;
+	font-size: 2em;
+	color: ghostwhite;
 }
 /* Barra navegacion*/
 /* Footer*/
@@ -194,3 +187,41 @@ h1 {
 		width: 35vh;
 	}
 }
+/* main donde encontrarnos*/
+.titulo_intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	margin: 150px;
+}
+iframe {
+	margin: 5.75em;
+}
+.tarjeta_ubi {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 45px;
+}
+.tarjeta {
+	width: 250px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(6.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: aliceblue;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+h3 {
+	color: aliceblue;
+}
+p {
+	color: aliceblue;
+}
+
+/* main donde encontrarnos*/
