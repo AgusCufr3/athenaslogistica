@@ -403,4 +403,7 @@ iframe {
 		grid-gap: 25px;
 		justify-content: center;
 	}
+	.contenedor2_img {
+	width: 3.5em;
+	}
 }
