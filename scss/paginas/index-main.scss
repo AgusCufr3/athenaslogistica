@@ -1,0 +1,33 @@
+@import 'mixinfunc';
+
+.bgImg {
+	background-image: url(../multimedia/index-body-img.jpg);
+    @include ajustar-imagen(93vh);
+
+    @media (max-width: pixeles-rem(757)) {
+	& {
+		background-image: none;
+	}
+    }
+}
+
+.intro {
+    @include crear-flexbox(center);
+    flex-direction: column;
+    height: 80vh;
+    color: aliceblue;
+    &-titulo {
+        padding: 7px 3px;
+        }
+    }
+
+.texto-intro {
+    width: 80vh;
+    
+    @media (max-width: pixeles-rem(757)) {
+        & {
+            padding: pixeles-rem(45);
+            width: 35vh
+        }
+    }
+}
