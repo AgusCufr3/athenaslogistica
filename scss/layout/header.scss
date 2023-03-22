@@ -1,0 +1,26 @@
+.barra_nav {
+	background: rgb(240, 248, 255);
+	background: linear-gradient(0deg, rgba(240, 248, 255, 1) 0%, #dce8ff 100%);
+	height: 60px;
+	@media (max-width:990px) {
+		height: auto;
+	}
+		.nombre_empresa {
+			font-family: "Pinyon Script", cursive;
+			font-size: 2em;
+			color: #0530ad;
+		}
+}
+.nav-item {
+	font-size: 17px;
+	padding: 0 5px;
+	a {
+		text-decoration: none;
+		color: #028806;
+		font-weight: bold;
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

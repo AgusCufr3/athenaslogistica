@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a8c08d7a20fac1876c0ba6704edc64f358f4c5b3
 @mixin crear-flexbox($justify) {
 	display: flex;
 	align-items: center;
@@ -13,8 +17,18 @@
 		repeat: no-repeat;
 	}
 }
+<<<<<<< HEAD
 
 @function pixeles-rem($pixeles) {
 	$rem: $pixeles / 16 + rem;
 	@return $rem;
 }
+=======
+@function pixeles-rem($pixeles) {
+    $rem: $pixeles / 16 + rem;
+    @return $rem;
+}
+
+
+
+>>>>>>> a8c08d7a20fac1876c0ba6704edc64f358f4c5b3
