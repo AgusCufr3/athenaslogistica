@@ -1,5 +1,5 @@
-@import "mixinfunc";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Pinyon+Script&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import 'mixinfunc';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Pinyon+Script&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 .bgImg {
 	background-image: url(../multimedia/index-body-img.jpg);
@@ -7,7 +7,7 @@
 
 	@media (max-width: pixeles-rem(757)) {
 		& {
-			background-image: none;
+			background-image: url(../multimedia/fondo-index-media.png);
 		}
 	}
 }
@@ -19,10 +19,56 @@
 	color: aliceblue;
 	&-titulo {
 		padding: 7px 3px;
+		font-weight: bold;
+		@media (max-width: pixeles-rem(757)) {
+			color: black;
+		}
 	}
 }
 
-.texto-intro {
+.intro-texto {
 	width: 80vw;
-    text-align: center;
+	text-align: center;
+	@media (max-width: pixeles-rem(757)) {
+		color: black;
+		font-size: 17px;
+	}
+}
+
+.iconos-index {
+	@include crear-flexbox(space-between);
+	flex-direction: row;
+	& li {
+		margin: 3px 10px;
+	}
+}
+
+.hover-icono:hover {
+	animation: shake 0.8s ease-in-out;
+	animation-iteration-count: 1;
+	@keyframes shake {
+		0% {
+			transform: translate(0, 0);
+		}
+		10%,
+		90% {
+			transform: translate(-5px, 0);
+		}
+		20%,
+		80% {
+			transform: translate(5px, 0);
+		}
+		30%,
+		50%,
+		70% {
+			transform: translate(-5px, 0);
+		}
+		40%,
+		60% {
+			transform: translate(5px, 0);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
 }

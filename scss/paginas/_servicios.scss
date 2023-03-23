@@ -24,7 +24,12 @@
 
 .bgImg3 {
 	background-image: url(../multimedia/fondo3.jpeg);
-	background-size:cover
+	background-size:cover;
+	@media (max-width: pixeles-rem(757)) {
+		& {
+			background-image: url(../multimedia/sobre-nosotros-media.jpeg);
+		}
+	}
 }
 
 .titulos-secciones {
@@ -32,6 +37,9 @@
 	color: aliceblue;
 	font-family: "Dancing Script", cursive;
 	text-align: center;
+	width: 100%;
+    height: 100%;
+    @include crear-flexbox(center)
 }
 .secciones-texto {
 	max-width: 1400px;
